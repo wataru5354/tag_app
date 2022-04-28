@@ -7,6 +7,10 @@
         <th>名前</th>
         <td><%= @post.text%></td>
       </tr>
+      <tr>
+        <th>タグ</th>
+        <td><%= @post.tags&.first&.tag_name %></td>
+      </tr>
     </tbody>
   </table>
   <%= link_to '編集', edit_post_path(@post.id)%>
