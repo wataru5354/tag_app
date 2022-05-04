@@ -9,6 +9,7 @@
       </tr>
       <tr>
         <th>タグ</th>
+        <%# &.(ぼっち演算子)を使うことでif文を使わず、短いコードで済む%>
         <td><%= @post.tags&.first&.tag_name %></td>
       </tr>
     </tbody>
